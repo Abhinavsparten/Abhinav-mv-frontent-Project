@@ -1,0 +1,151 @@
+.con {
+    background-color: black;
+    color: white;
+  }
+  .font-bold {
+    font-weight: bold;
+  }
+  .custom-text {
+    font-family: 'FK Grotesk Neue Trial', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  .half-left-shape {
+    background-color: black;
+    height: 150px;
+    border: 1px solid #FFFFFF33;
+    border-left: none;
+    border-radius: 0 100px 100px 0;
+    float: left;
+  }
+  .half-right-shape {
+    background-color: black;
+    height: 150px;
+    border: 1px solid #FFFFFF33;
+    border-right: none;
+    border-radius: 100px 0 0 100px;
+    float: right;
+  }
+  
+  /* Widths for specific rows */
+  .width-70 {
+    width: 70%;
+  }
+  .width-100 {
+    width: 100%;
+  }
+  .width-40 {
+    width: 40%;
+  }
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid #FFFFFF33;
+    padding: 12px;
+    border-radius: 100px;
+    height: 150px;
+    width: 137%;
+    margin-left: -150px;
+  }
+  .team-member-name,
+  .team-member-role {
+    color: white;
+    margin: 4px 0;
+  }
+  .action-buttons {
+    margin-top: 8px;
+  }
+  .action-btn {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 4px;
+    color: white;
+  }
+  .middle-shape {
+    display: flex;
+    justify-content: center; /* Center the middle shape */
+    position: relative; 
+  }
+  
+  .middle-shape .team-card {
+    position: relative; 
+    /* Adjust margin as needed to create gaps */
+    margin-left: 10px; /* or whatever gap you need */
+    margin-right: 10px; /* or whatever gap you need */
+  }
+  .icon{
+    height: 35px;
+    width: 35px;
+  }
+
+
+
+  /* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .con{
+        display: none;
+    }
+    .custom-text {
+      font-size: 24px; /* Reduce font size */
+      line-height: 36px; /* Adjust line height */
+    }
+  
+    .half-left-shape,
+    .half-right-shape {
+      height: 120px; /* Reduce height */
+    }
+  
+    .team-card {
+      height: 120px; /* Adjust card height */
+      width: 100%; /* Full width on medium screens */
+      margin-left: 0; /* Reset margin */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .custom-text {
+      font-size: 20px; /* Further reduce font size */
+      line-height: 30px; /* Adjust line height */
+    }
+  
+    .half-left-shape,
+    .half-right-shape {
+      height: 100px; /* Further reduce height */
+    }
+  
+    .team-card {
+      height: 100px; /* Adjust card height */
+      width: 100%; /* Full width */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .custom-text {
+      font-size: 16px; /* Minimum font size */
+      line-height: 24px; /* Minimum line height */
+    }
+  
+    .half-left-shape,
+    .half-right-shape {
+      height: 80px; /* Minimum height */
+    }
+  
+    .team-card {
+      height: 80px; /* Minimum card height */
+      padding: 8px; /* Reduce padding */
+    }
+  
+    .icon {
+      height: 30px; /* Reduce icon size */
+      width: 30px; /* Reduce icon size */
+    }
+  }
+  

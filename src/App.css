@@ -1,0 +1,546 @@
+
+
+/* --------- */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+ 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+.heading{
+  font-family: FK Grotesk Neue Trial;
+  font-size: 92px;
+}
+
+.logo {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+
+.nav ul {
+  list-style: none;       /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex;          /* Make the list horizontal */
+}
+
+
+  .nav {
+    width: auto; /* 'Hug' refers to auto in CSS */
+    height: auto; /* Hug means it should expand with its content */
+    max-height: 40px;
+    max-width: 504px; /* To ensure it doesn't exceed 504px */
+    padding: 8px 24px 8 24px; 
+    display: flex; /* To ensure the gap works properly */
+    gap: 24px; /* Spacing between the items */
+    border-radius: 30px; /* Rounded top-left corner */
+    border: 1px solid #FFFFFF80;
+    font-size: smaller;
+  
+}
+
+
+.nav ul li {
+  margin-right: 20px; /* Space between list items */
+  border-radius: 360px; /* Fully rounded shape */
+}
+
+.nav ul li a {
+  padding: 8px 14px; /* Add padding inside the links */
+  display: inline-block; /* Keep the link inline */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav ul li.active a, /* Active menu item */
+.nav ul li:first-child a { /* First menu item is active by default */
+  background-color: #FFFFFF1A; /* Rounded background color */
+  border-radius: 360px; /* Rounded background */
+}
+
+
+
+
+.project-btn {
+  background-color: rgba(64, 52, 235, 1); /* Blue button (primary color) */
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: rgba(64, 52, 235, 1)
+}
+
+/* Main Content Styles */
+.main-content {
+  text-align: center;
+}
+
+.main-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.main-content p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.explore-btn {
+  background-color: #6c757d; /* Secondary color (greyish) */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: rgba(108, 117, 125, 0.8);
+}
+
+/* ------------------------- */
+body {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  
+
+}
+.main{
+  position: relative;
+  overflow: hidden;
+  height: 684px;
+  background: rgb(0,0,0);
+  background: linear-gradient(167deg, rgba(0,0,0,1) 32%, rgba(64,52,235,1) 123%);
+}
+.full-screen-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 684px;
+  object-fit: cover; /* Cover the entire area */
+  z-index: -1; /* Behind other elements */
+}
+.bg-card {
+  background-color: rgba(84, 83, 83, 0.2); /* Card background color */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Card border */
+  width: 499px; /* Card width */
+  height: 359px; /* Card height */
+  box-sizing: border-box; /* Ensures border is included in the width/height */
+}
+
+.column-one {
+  height: 963px; /* Height for the first column */
+}
+.column-two {
+  height: 1162px; /* Height for the second column */
+}
+
+h3 {
+  font-family: 'FK Grotesk Neue Trial', sans-serif; /* Font for the heading */
+  line-height: 48.1px; /* Line height for the heading */
+}
+.main {
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  right: 0%; /* Adjust this value to move the image left */
+  bottom: 0;
+}
+
+.right-image {
+  width: 700px; /* Set the width */
+  height: 270px; /* Set the height */
+  border-top-left-radius: 22px; /* Optional: for rounded corners */
+  background-color: white; /* Ensure the background is white */
+  /* White linear gradient around the image */
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.4),  /* Reduced from 0.8 to 0.4 */
+  0 0 30px 15px rgba(255, 255, 255, 0.2); /* Reduced from 0.5 to 0.2 */
+}
+
+.heading {
+  font-family: 'FK Grotesk Neue Trial', sans-serif;
+  font-size: 5vw; /* Responsive font size based on viewport width */
+  line-height: 1.2; /* Adjust line height for better readability */
+}
+
+.lead {
+  font-size: 3vw; /* Responsive font size based on viewport width */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+.header {
+  position: relative;
+  background-color: #000; /* Adjust background as needed */
+  padding: 1rem;
+}
+
+.menu-toggle {
+  display: none; /* Hide by default, shown in mobile */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff; /* Change to desired color */
+  transition: all 0.3s ease;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  width: 250px; /* Width of sidebar */
+  height: 100vh; /* Full height */
+  background-color: black; /* Sidebar background color */
+  color: #fff; /* Text color */
+  transition: left 0.3s ease; /* Smooth transition */
+  padding-top: 60px; /* Space for header */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.sidebar.active {
+  left: 0; /* Move into view when active */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px; /* Space for each item */
+}
+
+.sidebar ul li a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Close button styles */
+.close-btn {
+  position: absolute;
+  top: 20px; /* Position it at the top */
+  right: 20px; /* Position it on the right */
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #fff; /* Text color */
+  font-size: 30px; /* Size of the close icon */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Standard navigation styles */
+.nav {
+  display: none; /* Hide by default for mobile */
+}
+
+.nav ul {
+  display: flex; /* Horizontal layout */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin-right: 20px; /* Space between items */
+}
+
+.nav ul li a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+
+
+/* Explore button */
+.btn-with-underline {
+  padding: 0.5rem 1rem; /* Adjust padding */
+  font-size: 1rem; /* Adjust font size */
+}
+
+/* Image container */
+.image-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 700px; /* Set the width */
+  height: 270px; /* Set the height */
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Show menu toggle button on mobile */
+  }
+
+  .sidebar {
+    display: block; /* Show sidebar on mobile */
+  }
+
+  .nav {
+    display: none; /* Hide nav on mobile */
+  }
+
+  .heading {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  .lead {
+    font-size: 1rem; /* Smaller lead text on mobile */
+  }
+
+  .btn-with-underline {
+    font-size: 0.9rem; /* Smaller button text on mobile */
+    padding: 0.4rem 0.8rem; /* Adjust padding */
+  }
+
+  .image-container {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height for responsiveness */
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .sidebar {
+    display: none; /* Hide sidebar on larger screens */
+  }
+
+  .nav {
+    display: block; /* Show nav on larger screens */
+  }
+
+  .menu-toggle {
+    display: none; /* Hide menu toggle button on larger screens */
+  }
+
+  .project-btn {
+    display: block; /* Show project button on larger screens */
+  }
+  .header .d-flex {
+    justify-content: flex-start;
+  }
+
+  .menu-toggle {
+    margin-right: 1rem;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  /* Hide desktop navigation and project button on small screens */
+  .nav {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+
+
+/* second part */
+.full-height {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  max-height: 466px;
+  padding: 80px 0 0 0;
+  display: flex;
+  gap: 36px;
+  opacity: 1; /* Change to 1 to make visible */
+  flex-direction: column; /* Align children vertically */
+}
+
+.rounded-full {
+  width: 408px;
+  height: 220px;
+  border-radius: 360px 0 0 0;
+  background-color: #FFFFFF1A; /* Background color */
+  opacity: 1; /* Visible */
+}
+
+.who-are-we {
+  margin-left: 158px; /* Align with the left edge of the shape */
+  margin-top: 30px; /* Adjust this value to position it above the shape */
+  position: relative; /* Relative positioning for the text */
+}
+.text-muted-foreground {
+  font-family: 'FK Grotesk Neue Trial'; /* Set the font family */
+  font-size: 32px; /* Set the font size */
+  font-weight: 400; /* Set the font weight */
+  line-height: 48px; /* Set the line height */
+  letter-spacing: -0.02em; /* Set the letter spacing */
+  text-align: left; /* Align text to the left */
+  color: #6B7280; /* Adjust the color if needed (default Bootstrap color) */
+}
+.text-close-knit {
+  font-family: 'FK Grotesk Neue Trial'; /* Set the font family */
+  font-size: 32px; /* Set the font size */
+  font-weight: 400; /* Set the font weight */
+  line-height: 48px; /* Set the line height */
+  letter-spacing: -0.02em; /* Set the letter spacing */
+  text-align: left; /* Align text to the left */
+  color: #6B7280; /* Adjust the color if needed (default Bootstrap color) */
+}
+/* wefo studio image */
+.custom-div {
+  width: 2; /* Set width */
+  height: 230.89px; /* Set height */
+  opacity: 1; /* Set opacity */
+  background-image: url('https://i.postimg.cc/3RRwqzvV/Group-2-1.png'); /* Set background image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repetition */
+}
+
+
+/* 3 column */
+.maindiv{
+  background-color: rgba(84, 83, 83, 0.2);
+  border-radius: 24px;
+}
+.custom-padding {
+  padding: 3rem 2rem; /* Adjust padding as needed */
+}
+
+.custom-card {
+  background-color: rgba(84, 83, 83, 0.2);
+  min-height: 350px; /* Ensures all cards have the same minimum height */
+  border-radius: 14px;
+}
+
+
+.custom-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+p.text-white.mt-2 {
+  border: 1px solid #666666;
+  border-radius: 30px;
+  padding: 5px; /* Optional, adds some space inside the border */
+  display: inline;
+  margin-right: 8px;
+}
+.text-group {
+  margin-top: 20px; /* Space between top content and text */
+  margin-bottom: 20px; /* Space between text and bottom content */
+}
+/* round shape left and text right */
+.full-height {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Set background to black */
+  color: #fff; /* Set text color to white */
+  padding: 20px; /* Reduce padding */
+}
+
+.rounded-full {
+  border-radius: 50px;
+  width: 16rem;
+  height: 4rem;
+  background-color: rgba(64, 52, 235, 1); /* Bootstrap primary color */
+}
+
+.text-muted-foreground {
+  color: #b0b0b0; /* Lighter gray text for muted foreground */
+}
+
+.custom-btn {
+  background-color: #6c757d; /* Bootstrap secondary */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.custom-btn:hover {
+  background-color: rgba(108, 117, 125, 0.8); /* Secondary with hover effect */
+}
+.btn-send {
+  display: inline-flex; /* Keep it inline with the text */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  padding: 4px;
+  margin-left: 8px; /* Add some space between text and button */
+  border: 1px solid #FFFFFF4D;
+  border-radius: 100px;
+  
+}
+
+
+
+
+
+/* testimonials */
+
+
+
+@media (max-width: 768px) {
+  .text-md-start {
+    text-align: center !important;
+  }
+
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+

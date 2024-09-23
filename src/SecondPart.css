@@ -1,0 +1,72 @@
+.full-height {
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 1rem; /* Padding for responsiveness */
+    background-color: #000; /* Optional: Background color */
+  }
+  
+  .who-are-we {
+    font-size: 1.5rem; /* Adjust size */
+    margin-bottom: 1rem; /* Spacing */
+    text-align: left; /* Default alignment */
+  }
+  
+
+  
+  .project-btn:hover {
+    background-color: rgba(64, 52, 235, 0.8); /* Hover effect */
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .who-are-we {
+        font-size: 1.25rem; /* Smaller font size on mobile */
+        text-align: center; /* Center text on mobile */
+        width: 100%; /* Ensure it takes full width for centering */
+      }
+  
+    .text-muted-foreground {
+      font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+  
+    .project-btn {
+      font-size: 0.9rem; /* Smaller button text on mobile */
+      padding: 0.4rem 0.8rem; /* Adjust padding */
+    }
+    .custom-div {
+        padding: 0.5rem; /* Less padding on mobile */
+        margin: 0; /* Reset margin */
+        max-width: 100%; /* Ensure it fits within the viewport */
+      }
+ 
+  }
+  
+  @media (max-width: 576px) {
+    .who-are-we {
+      font-size: 1rem; /* Further reduce font size on very small screens */
+      display: none;
+    }
+  
+    .text-muted-foreground {
+      font-size: 0.8rem; /* Further reduce font size on very small screens */
+    }
+  
+    .project-btn {
+      font-size: 0.8rem; /* Further reduce button size */
+      padding: 0.3rem 0.6rem; /* Further adjust padding */
+    }
+    .custom-div {
+        padding: 0.25rem; /* Even less padding for very small screens */
+      }
+      .who-are-we {
+        font-size: 1rem; /* Further reduce font size on very small screens */
+        text-align: center; /* Center text on very small screens */
+      }
+
+  }
+
+
+  
+  

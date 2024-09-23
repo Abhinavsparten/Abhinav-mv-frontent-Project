@@ -1,0 +1,124 @@
+/* testimonials */
+
+.gradient{
+    background: rgb(64,52,235);
+  background: linear-gradient(30deg, rgba(64,52,235,1) 0%,  rgba(0,0,0,1) 49%);
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+  }
+  
+  img.rounded-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .btn-arrow {
+    background-color: transparent; /* Transparent background */
+    color: rgba(232, 234, 237, 1); /* Text color */
+    border: 0.5px solid rgba(232, 234, 237, 1); /* Very thin border */
+    border-radius: 50%; /* Make it a circle */
+    width: 40px; /* Set the width */
+    height: 40px; /* Set the height */
+    padding: 4px; /* Add some padding */
+    font-size: 12px; /* Very thin font size */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  .text-lead {
+    font-family: 'FK Grotesk Neue Trial'; /* Set the font family */
+    font-size: 31px; /* Set the font size */
+    font-weight: 400; /* Set the font weight */
+    line-height: 48px; /* Set the line height */
+    letter-spacing: -0.02em; /* Set the letter spacing */
+    text-align: left; /* Align text to the left */
+  }
+
+  @media (max-width: 576px) {
+    .text-lead {
+      font-size: 1.125rem; /* Smaller font size for mobile */
+      line-height: 1.5; /* Adjust line height for better readability */
+    }
+  
+    img.rounded-circle {
+      width: 40px; /* Adjust profile picture size for mobile */
+      height: 40px;
+    }
+  }
+
+  /* message and footer part */
+.custom-input {
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #FFFFFF33; /* Thin underline */
+    outline: none;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  
+  .custom-input::placeholder {
+    color:  #808080;
+    opacity: 0.7;
+  }
+  
+  .custom-input:focus {
+    border-bottom:  0.2px solid #FFFFFF33; /* Thin underline on focus */
+  }
+  
+  .btn-with-underline {
+    background-color: transparent; /* Transparent background */
+    color: white; /* Text color */
+    border: 1px solid white; /* Card border */
+    border-radius: 19px;
+    padding: 0.5rem 1rem; /* Padding */
+  }
+  
+  
+  .full-width-line {
+    width: 94%; /* Full width of the container */
+    max-width: 1200px; /* Adjust this to match your content width */
+    height: 1px; /* Height of the line */
+    background-color: #FFFFFF33; /* Color of the line */
+    margin: 0 auto; /* Center it within the container */
+    margin-top: 20px; /* Optional: adjust top margin */
+    margin-bottom: 20px; /* Optional: adjust bottom margin */
+  }
+  h1{
+    font-family: FK Grotesk Neue Trial;
+  }
+  .icon-circle-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust to your desired circle size */
+    height: 50px; /* Adjust to your desired circle size */
+    border: 0.5px solid white; /* Circular border */
+    border-radius: 50%; /* Makes the border a circle */
+  }
+  
+  .icon-circle-border img {
+    width: 24px; /* Adjust icon size inside the circle */
+    height: 24px;
+  }
+
+  @media (max-width: 576px) {
+    .icon-circle-border {
+      width: 40px; /* Adjust circle size for smaller screens */
+      height: 40px;
+    }
+  
+    .icon-circle-border img {
+      width: 20px; /* Adjust icon size for smaller screens */
+      height: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+  
+    .btn-with-underline {
+      width: 100%; /* Full width button on small screens */
+    }
+  }

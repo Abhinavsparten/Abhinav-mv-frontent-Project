@@ -1,0 +1,21 @@
+/* Base styles */
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .bg-card {
+        width: calc(50% - 20px); /* Two cards per row on medium screens */
+        height: 250px; /* Adjust height for medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-card {
+        width: calc(100% - 20px); /* One card per row on small screens */
+        height: 200px; /* Adjust height for small screens */
+    }
+    
+    .column-two > div:last-child {
+        margin-bottom: 0; /* Remove margin from the last card */
+    }
+}
